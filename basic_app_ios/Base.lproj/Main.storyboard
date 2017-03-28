@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="basic_app_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rva_living_room_view.jpg" id="4SQ-p0-SEo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="vuM-gO-BCe">
+                                <rect key="frame" x="54" y="255" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="Yde-6e-LG2">
+                                <rect key="frame" x="54" y="201" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c5W-BE-VBO">
+                                <rect key="frame" x="54" y="369" width="120" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="highlight_border_login:" destination="BYZ-38-t0r" eventType="touchDown" id="hNY-g1-wdW"/>
+                                    <action selector="highlight_drag_border_login:" destination="BYZ-38-t0r" eventType="touchDragInside" id="wWm-Nb-pT2"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cW6-Aw-HVt"/>
+                                    <action selector="unhighlight_border_login:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="Yes-Vh-CkL"/>
+                                    <action selector="unhighlight_inside_border_login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IFZ-R8-k0T"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gc1-dj-vKg">
+                                <rect key="frame" x="16" y="615" width="85" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5WB-Sn-h49">
+                                <rect key="frame" x="209" y="369" width="120" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="highlight_border_register:" destination="BYZ-38-t0r" eventType="touchDown" id="vwM-n6-5At"/>
+                                    <action selector="highlight_drag_border_register:" destination="BYZ-38-t0r" eventType="touchDragInside" id="fXN-o0-azr"/>
+                                    <action selector="register:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F1h-gd-GWO"/>
+                                    <action selector="unhighlight_border_register:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="BEx-UR-V16"/>
+                                    <action selector="unhighlight_insider_border_register:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5nc-w3-Itc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="email_input" destination="Yde-6e-LG2" id="ZXE-vZ-DWQ"/>
+                        <outlet property="login_button" destination="c5W-BE-VBO" id="V3C-ly-50o"/>
+                        <outlet property="password_input" destination="vuM-gO-BCe" id="X80-IR-NnQ"/>
+                        <outlet property="register_button" destination="5WB-Sn-h49" id="Qdg-gx-Yld"/>
+                        <outlet property="version_label" destination="Gc1-dj-vKg" id="9of-Ni-nEO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.5" y="-33.5"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="o6P-Rn-gU8">
+            <objects>
+                <viewController storyboardIdentifier="register" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tqI-dx-QRE" customClass="RegisterViewController" customModule="basic_app_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V1B-Oq-YH2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rva_living_room_view2.jpg" id="1ld-CS-m7V">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="FOq-ne-IDH">
+                                <rect key="frame" x="50" y="117" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="gGR-ml-JF2">
+                                <rect key="frame" x="50" y="358" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Confirmation" textAlignment="natural" minimumFontSize="17" id="O0n-lv-ekt">
+                                <rect key="frame" x="50" y="396" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" id="XxI-7u-RLB">
+                                <rect key="frame" x="50" y="155" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" id="KT8-hw-X8o">
+                                <rect key="frame" x="50" y="193" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ip2-Yu-FYB">
+                                <rect key="frame" x="50" y="549" width="120" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Cancel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancel:" destination="tqI-dx-QRE" eventType="touchUpInside" id="Lhc-jf-4mv"/>
+                                    <action selector="highlight_border_cancel:" destination="tqI-dx-QRE" eventType="touchDown" id="7lr-69-c18"/>
+                                    <action selector="highlight_drag_border_cancel:" destination="tqI-dx-QRE" eventType="touchDragInside" id="mki-xC-08b"/>
+                                    <action selector="unhighlight_border_cancel:" destination="tqI-dx-QRE" eventType="touchDragOutside" id="uF4-g4-u3W"/>
+                                    <action selector="unhighlight_inside_border_cancel:" destination="tqI-dx-QRE" eventType="touchUpInside" id="zRi-2I-829"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Twa-WC-Amx">
+                                <rect key="frame" x="205" y="549" width="120" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Sign Up"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="highlight_border_register:" destination="tqI-dx-QRE" eventType="touchDown" id="gRQ-MX-Ta5"/>
+                                    <action selector="highlight_drag_border_register:" destination="tqI-dx-QRE" eventType="touchDragInside" id="uyd-W7-2qZ"/>
+                                    <action selector="register:" destination="tqI-dx-QRE" eventType="touchUpInside" id="3e9-IN-wGT"/>
+                                    <action selector="unhighlight_border_register:" destination="tqI-dx-QRE" eventType="touchDragOutside" id="aWd-EH-ptB"/>
+                                    <action selector="unhighlight_inside_border_register:" destination="tqI-dx-QRE" eventType="touchUpInside" id="b4p-aF-eW3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancel_button" destination="Ip2-Yu-FYB" id="gNh-f6-t2k"/>
+                        <outlet property="email_input" destination="FOq-ne-IDH" id="4Rg-gr-Wdk"/>
+                        <outlet property="fname_input" destination="XxI-7u-RLB" id="zZQ-tR-dpp"/>
+                        <outlet property="lname_input" destination="KT8-hw-X8o" id="Nf1-I8-7EA"/>
+                        <outlet property="password_confirmation_input" destination="O0n-lv-ekt" id="miE-GJ-jL5"/>
+                        <outlet property="password_input" destination="gGR-ml-JF2" id="L5l-vw-hsw"/>
+                        <outlet property="register_button" destination="Twa-WC-Amx" id="82Z-57-Yec"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufI-0x-GBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.5" y="780.5"/>
+        </scene>
+        <!--Profile Home View Controller-->
+        <scene sceneID="Tgo-Ga-lTE">
+            <objects>
+                <viewController storyboardIdentifier="profile_home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XoJ-tr-iM4" customClass="ProfileHomeViewController" customModule="basic_app_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5sc-ek-LiG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rva_roof_view.jpg" id="8lE-nN-fBV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jB6-Sp-cLX">
+                                <rect key="frame" x="239" y="79" width="120" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="My Photos"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="highlight_border_my_photos:" destination="XoJ-tr-iM4" eventType="touchDown" id="E7u-aq-Ms3"/>
+                                    <action selector="highlight_drag_border_my_photos:" destination="XoJ-tr-iM4" eventType="touchDragInside" id="7nr-gr-uJa"/>
+                                    <action selector="my_photos_lookup:" destination="XoJ-tr-iM4" eventType="touchUpInside" id="FLW-2z-iuS"/>
+                                    <action selector="unhighlight_border_my_photos:" destination="XoJ-tr-iM4" eventType="touchDragOutside" id="wEa-38-Zfr"/>
+                                    <action selector="unhighlight_inside_border_my_photos:" destination="XoJ-tr-iM4" eventType="touchUpInside" id="T5N-mb-CeF"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="PvP-p3-quz">
+                                <rect key="frame" x="112" y="189" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zyh-zh-EqS" userLabel="Logout">
+                                <rect key="frame" x="239" y="563" width="120" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Logout"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="highlight_border_logout:" destination="XoJ-tr-iM4" eventType="touchDown" id="zx1-4r-J9b"/>
+                                    <action selector="highlight_drag_border_logout:" destination="XoJ-tr-iM4" eventType="touchDragInside" id="rfj-yq-gwu"/>
+                                    <action selector="logout_user:" destination="XoJ-tr-iM4" eventType="touchUpInside" id="bJN-vq-fgP"/>
+                                    <action selector="unhighlight_border_logout:" destination="XoJ-tr-iM4" eventType="touchDragOutside" id="cfk-wg-ugS"/>
+                                    <action selector="unhighlight_inside_border_logout:" destination="XoJ-tr-iM4" eventType="touchUpInside" id="O5f-gD-zCr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hlQ-JF-SHB">
+                                <rect key="frame" x="16" y="563" width="120" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Edit Info"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="edit_info:" destination="XoJ-tr-iM4" eventType="touchUpInside" id="vXt-DC-r2n"/>
+                                    <action selector="highlight_border_edit_info:" destination="XoJ-tr-iM4" eventType="touchDown" id="aKc-Pv-8bb"/>
+                                    <action selector="highlight_drag_edit_info:" destination="XoJ-tr-iM4" eventType="touchDragInside" id="m18-ue-YQO"/>
+                                    <action selector="unhighlight_border_edit_info:" destination="XoJ-tr-iM4" eventType="touchDragOutside" id="Jj6-N1-QxP"/>
+                                    <action selector="unhighlight_inside_border_edit_info:" destination="XoJ-tr-iM4" eventType="touchUpInside" id="KGf-Jf-Iqa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r2N-rF-IpV">
+                                <rect key="frame" x="16" y="347" width="343" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vtb-v6-6Y0">
+                                <rect key="frame" x="16" y="79" width="150" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Upload Image"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="add_photo:" destination="XoJ-tr-iM4" eventType="touchUpInside" id="Dh8-AR-Q74"/>
+                                    <action selector="highlight_border_upload_image:" destination="XoJ-tr-iM4" eventType="touchDown" id="NF6-s7-Hsb"/>
+                                    <action selector="highlight_drag_border_upload_image:" destination="XoJ-tr-iM4" eventType="touchDragInside" id="A9t-j9-oEl"/>
+                                    <action selector="unhighlight_border_upload_image:" destination="XoJ-tr-iM4" eventType="touchDragOutside" id="I7Z-So-dgs"/>
+                                    <action selector="unhighlight_inside_border_upload_image:" destination="XoJ-tr-iM4" eventType="touchUpInside" id="dgB-GD-PGF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="edit_info_button" destination="hlQ-JF-SHB" id="oWl-TF-xA3"/>
+                        <outlet property="logout" destination="zyh-zh-EqS" id="dCu-oz-K5Q"/>
+                        <outlet property="my_photo" destination="jB6-Sp-cLX" id="yKT-4Y-6XX"/>
+                        <outlet property="my_profile_pic" destination="PvP-p3-quz" id="Wuy-fg-xdy"/>
+                        <outlet property="success_status" destination="r2N-rF-IpV" id="GE9-fj-brF"/>
+                        <outlet property="upload_image_button" destination="vtb-v6-6Y0" id="rO1-K7-nus"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4z-Ps-faC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575.5" y="-35.5"/>
+        </scene>
+        <!--Edit Profile View Controller-->
+        <scene sceneID="Woo-cJ-Qn5">
+            <objects>
+                <viewController storyboardIdentifier="edit_profile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UwO-1O-TOq" customClass="EditProfileViewController" customModule="basic_app_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mnZ-sc-GTq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rva_roof_view.jpg" id="Erc-hE-Hv0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" id="KOc-hr-7k6">
+                                <rect key="frame" x="50" y="155" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" id="ncp-AQ-raA">
+                                <rect key="frame" x="50" y="193" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="V7W-D8-yN4">
+                                <rect key="frame" x="50" y="356" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Confirmation" textAlignment="natural" minimumFontSize="17" id="NFn-jQ-7He">
+                                <rect key="frame" x="50" y="394" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="UfI-ig-e5z">
+                                <rect key="frame" x="50" y="117" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dkD-Dp-fqs">
+                                <rect key="frame" x="205" y="549" width="120" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Update"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="highlight_border_update:" destination="UwO-1O-TOq" eventType="touchDown" id="s4x-ik-3Ah"/>
+                                    <action selector="highlight_drag_border_update:" destination="UwO-1O-TOq" eventType="touchDragInside" id="LAy-Yq-bXW"/>
+                                    <action selector="save:" destination="UwO-1O-TOq" eventType="touchUpInside" id="aAR-QP-pz4"/>
+                                    <action selector="unhighlight_border_update:" destination="UwO-1O-TOq" eventType="touchDragOutside" id="VDT-7C-Cez"/>
+                                    <action selector="unhighlight_inside_border_update:" destination="UwO-1O-TOq" eventType="touchUpInside" id="mbm-OV-Gi4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TaV-SO-rdY">
+                                <rect key="frame" x="50" y="549" width="120" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Cancel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancel:" destination="UwO-1O-TOq" eventType="touchUpInside" id="c2h-Rz-OCi"/>
+                                    <action selector="highlight_border_cancel:" destination="UwO-1O-TOq" eventType="touchDown" id="AnU-LM-fgh"/>
+                                    <action selector="highlight_drag_border_cancel:" destination="UwO-1O-TOq" eventType="touchDragInside" id="3ME-Nj-Edk"/>
+                                    <action selector="unhighlight_border_cancel:" destination="UwO-1O-TOq" eventType="touchDragOutside" id="wUl-nv-WSu"/>
+                                    <action selector="unhighlight_inside_border_cancel:" destination="UwO-1O-TOq" eventType="touchUpInside" id="iTy-Lc-9KT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancel_button" destination="TaV-SO-rdY" id="drm-Hb-Mb6"/>
+                        <outlet property="email_input" destination="UfI-ig-e5z" id="X2L-gz-Rme"/>
+                        <outlet property="fname_input" destination="KOc-hr-7k6" id="ux7-Bd-dsF"/>
+                        <outlet property="lname_input" destination="ncp-AQ-raA" id="oEx-dp-5VM"/>
+                        <outlet property="password_confirm_input" destination="NFn-jQ-7He" id="ytD-US-R6z"/>
+                        <outlet property="password_input" destination="V7W-D8-yN4" id="OL0-2F-4tm"/>
+                        <outlet property="update_button" destination="dkD-Dp-fqs" id="6fl-7S-sMe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8J-Ps-ndo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575.5" y="780.5"/>
+        </scene>
+        <!--My Photos View Controller-->
+        <scene sceneID="CoR-Ne-SEU">
+            <objects>
+                <viewController storyboardIdentifier="my_photos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Cg-ES-pdK" customClass="MyPhotosViewController" customModule="basic_app_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qon-8P-Jgm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rva_roof_view.jpg" id="c0f-bI-kMq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SGY-Mn-wFd">
+                                <rect key="frame" x="16" y="605" width="343" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <state key="normal" title="Trash"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="highlight_border_trash:" destination="7Cg-ES-pdK" eventType="touchDown" id="sRX-1p-Tng"/>
+                                    <action selector="highlight_drag_border_trash:" destination="7Cg-ES-pdK" eventType="touchDragInside" id="Tsf-mA-3Ej"/>
+                                    <action selector="trash_selected:" destination="7Cg-ES-pdK" eventType="touchUpInside" id="ztC-lz-uZ9"/>
+                                    <action selector="unhighlight_border_trash:" destination="7Cg-ES-pdK" eventType="touchDragOutside" id="8di-lA-PPg"/>
+                                    <action selector="unhighlight_inside_border_trash:" destination="7Cg-ES-pdK" eventType="touchUpInside" id="quY-ey-SjK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aED-4H-0Sb">
+                                <rect key="frame" x="16" y="542" width="343" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <state key="normal" title="Set As Profile"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="highlight_border_profile:" destination="7Cg-ES-pdK" eventType="touchDown" id="IkB-r5-u66"/>
+                                    <action selector="highlight_drag_border_profile:" destination="7Cg-ES-pdK" eventType="touchDragInside" id="kNf-XV-wDT"/>
+                                    <action selector="set_profile_image:" destination="7Cg-ES-pdK" eventType="touchUpInside" id="zkX-f2-Aor"/>
+                                    <action selector="unhighlight_border_profile:" destination="7Cg-ES-pdK" eventType="touchDragOutside" id="Klq-GC-tw0"/>
+                                    <action selector="unhighlight_inside_border_profile:" destination="7Cg-ES-pdK" eventType="touchUpInside" id="7nG-1l-yhl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yug-Qh-f2g">
+                                <rect key="frame" x="16" y="479" width="343" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancel:" destination="7Cg-ES-pdK" eventType="touchUpInside" id="6gx-Yv-4uA"/>
+                                    <action selector="highlight_border_cancel:" destination="7Cg-ES-pdK" eventType="touchDown" id="v7C-aS-3pQ"/>
+                                    <action selector="highlight_drag_border_cancel:" destination="7Cg-ES-pdK" eventType="touchDragInside" id="0xO-lh-pge"/>
+                                    <action selector="unhighlight_border_cancel:" destination="7Cg-ES-pdK" eventType="touchDragOutside" id="gu4-fP-7JI"/>
+                                    <action selector="unhighlight_inside_border_cancel:" destination="7Cg-ES-pdK" eventType="touchUpInside" id="nuz-G4-zuK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancel_button" destination="yug-Qh-f2g" id="Rpg-Jn-30e"/>
+                        <outlet property="profile_button" destination="aED-4H-0Sb" id="U2V-5W-swS"/>
+                        <outlet property="trash_button" destination="SGY-Mn-wFd" id="Maf-qi-tR7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNr-rG-7kP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130.5" y="-34.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rva_living_room_view.jpg" width="4032" height="3024"/>
+        <image name="rva_living_room_view2.jpg" width="4032" height="3024"/>
+        <image name="rva_roof_view.jpg" width="1536" height="2048"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
