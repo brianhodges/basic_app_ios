@@ -151,7 +151,7 @@ class MyPhotosViewController: UIViewController {
     
     
     //Action Buttons (Cancel/Set Profile Pic/Trash)
-    func tappedImage(_ sender: AnyObject) {
+    @objc func tappedImage(_ sender: AnyObject) {
         let tappedImageView = sender.view!
         for view in self.view.subviews as [UIView] {
             if let img = view as? UIImageView {
