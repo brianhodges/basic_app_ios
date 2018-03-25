@@ -10,7 +10,7 @@ import Foundation
 
 struct Constants {    
     struct Net {
-        static let version_number = "1.0.2"
+        static let version_number = "1.0.3"
         static let host_url : String = "https://basic-app.herokuapp.com/"
         static let login_api_url = URL(string: host_url + "auth")
         static let register_api_url = URL(string: host_url + "create_user")
@@ -18,7 +18,7 @@ struct Constants {
         static let update_user_api_url = URL(string: host_url + "update_user")
         static let my_photos_api_url = URL(string: host_url + "my_photos")
         static let my_photo_api_url = URL(string: host_url + "my_photo")
-        static let create_photo_api_url = "https://basic-app.herokuapp.com/create_user_image/"
+        static let create_photo_api_url = host_url + "create_user_image/"
         static let failure = "0"
         static let success = 1
         static var registered = false

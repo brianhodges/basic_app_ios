@@ -159,7 +159,7 @@ class MyPhotosViewController: UIViewController {
             }
         }
         tappedImageView.layer.borderWidth = 4
-        tappedImageView.layer.borderColor = UIColor.blue.cgColor
+        tappedImageView.layer.borderColor = UIColor.red.cgColor
         MyPhotosConstants.selected_image = tappedImageView.tag
     }
     
